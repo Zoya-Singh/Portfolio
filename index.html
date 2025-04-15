@@ -622,7 +622,74 @@
             .hobby-card {
                 width: 100%;
             }
-            
+            /* Hobbies Section */
+
+
+            /* Hobbies Section */
+.hobbies-intro {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    color: #d0d6e0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hobbies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.hobby-card {
+    background: linear-gradient(145deg, #1e2a3a, #1a2432);
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #1f2c3d, #1b2634);
+}
+
+.hobby-card i {
+    font-size: 2.2rem;
+    color: #4eaeff;
+    margin-bottom: 1.2rem;
+    display: inline-block;
+    text-shadow: 0 0 20px rgba(78, 174, 255, 0.4);
+}
+
+.hobby-card h3 {
+    margin-bottom: 0.8rem;
+    color: #fff;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.hobby-card p {
+    color: #b0b8c5;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hobbies-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hobbies-container {
+        grid-template-columns: 1fr;
+    }
+}
         }
     </style>
 </head>
@@ -630,7 +697,7 @@
     <!-- Header -->
     <header>
         <div class="container header-content">
-            <div class="logo">Zoya.dev</div>
+            <div class="logo"></br></div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -676,6 +743,24 @@
         </div>
     </section>
 
+    <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact Me</h2>
+      
+          <p><strong>Phone:</strong> <a href="tel:+918866744208">+91 88667 44208</a></p>
+      
+          <p><strong>Email:</strong> 
+            <a href="mailto:zoyasinghsanjiv1@gmail.com">zoyasinghsanjiv1@gmail.com</a>
+          </p>
+      
+          <p><strong>LinkedIn:</strong> 
+            <a href="https://www.linkedin.com/in/zoya-singh/" target="_blank">linkedin.com/in/zoya-singh</a>
+          </p>
+        </div>
+      </section>
+      
+      
+
     <!-- Skills Section -->
     <section id="skills" class="section skills">
         <div class="container">
@@ -686,173 +771,71 @@
                 <!-- Programming Languages -->
                 <div class="skill-category">
                     <h3>Programming Languages</h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Java</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Python</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>JavaScript</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>SQL</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Java</div>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>  
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">C</div> 
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">SQL</div> 
+                        </div>
+                    </div>
                 </div>
                 
-                <!-- Frameworks & Libraries -->
+                <!-- Web Technologies -->
                 <div class="skill-category">
-                    <h3>Web Technologies & Frameworks</h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>HTML/CSS</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>React.js</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Node.js</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Bootstrap</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                
-                <!-- Technical Skills -->
-                <div class="skill-category">
-                    <h3>Other Technical Skills</h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Backend Development</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Object-Oriented Programming</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Git & GitHub</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Spark (Big Data)</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%;"></div>
-                            </div>
-                        </li>
-                    </ul>
+                    <h3>Web Technologies</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML/CSS</div>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React.js</div>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Node.js</div>  
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Express.js</div>  
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Bootstrap</div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Professional Skills -->
                 <div class="skill-category">
                     <h3>Professional Skills</h3>
-                    <ul class="skill-list">
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Team Management</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Problem-Solving</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Communication</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%;"></div>
-                            </div>
-                        </li>
-                        <li class="skill-item">
-                            <div class="skill-name">
-                                <span>Analytical Thinking</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%;"></div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">Problem-Solving</div>
+                           
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">OOP</div>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Git & GitHub</div>
+                            
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Team Management</div>                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -871,36 +854,15 @@
                         <img src="C:\Documents\myDoc\ecom.jpg" alt="E-commerce Website Project">
                     </div>
                     <div class="project-info">
-                        <h3>Shopping Convenience App</h3>
+                        <h3>E-commerce website</h3>
                         <div class="project-tags">
                             <span class="project-tag">Java</span>
                             <span class="project-tag">Backend</span>
                             <span class="project-tag">Database</span>
                         </div>
-                        <p class="project-desc">Developed software application focused on enhancing shopping convenience with features like product search, comparison, and personalized recommendations.</p>
+                        <p class="project-desc">Developed software application based on on an E-commerce website with features like product search, comparison, personalized recommendations and more features.</p>
                         <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
-                            <a href="https://github.com/Zoya-Singh" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="C:\Documents\myDoc\portf.png" alt="Portfolio Website">
-                    </div>
-                    <div class="project-info">
-                        <h3>Responsive Web Portfolio</h3>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">JavaScript</span>
-                        </div>
-                        <p class="project-desc">Created a responsive personal portfolio website showcasing skills, projects, and education using modern web technologies.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
-                            <a href="https://github.com/Zoya-Singh" class="project-link">GitHub</a>
+                            <a href="https://github.com/Zoya-Singh" class="project-link"></br>GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -908,22 +870,42 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="C:\Documents\myDoc\os.png" alt="Group Project">
+                        <img src="C:\Documents\myDoc\os.png"x alt="Group Project">
                     </div>
                     <div class="project-info">
-                        <h3>Collaborative Student Project</h3>
+                        <h3>OS Simulater
+                        </br> (collaborative project)</h3>
                         <div class="project-tags">
                             <span class="project-tag">Python</span>
                             <span class="project-tag">Team Project</span>
                             <span class="project-tag">Backend</span>
                         </div>
-                        <p class="project-desc">Collaborated in a team to develop a comprehensive solution addressing real-world challenges, demonstrating effective teamwork and problem-solving skills.</p>
+                        <p class="project-desc">Collaborated in a team to develop an OS simulator that would help us understand the various algorithm CPU uses to decide the order in which processe would be processed.</p>
                         <div class="project-links">
-                            <a href="#" class="project-link">View Details</a>
                             <a href="https://github.com/MeetD99/OS-Simulator" class="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
+
+ <!-- Project 2 -->
+ <div class="project-card">
+    <div class="project-image">
+        <img src="C:\Documents\myDoc\portf.png" alt="Portfolio Website">
+    </div>
+    <div class="project-info">
+        <h3>Portfolio</h3>
+        <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+        </div>
+        <p class="project-desc">Created a responsive personal portfolio website showcasing skills, projects, and education using html, and JavaScript.</p>
+        <div class="project-links">
+            <a href="https://github.com/Zoya-Singh/Portfolio" class="project-link"></br></br>GitHub</a>
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
     </section>
@@ -953,4 +935,20 @@
     </section>
 
     <!-- Hobbies Section -->
-    <section id="hobbies" class="section hobbies
+    <section id="hobbies" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hobbies</h2>
+            </div>
+            <div class="hobbies-container">
+                <div class="hobby-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Music</h3>
+                    <h3>Reading</h3>
+                    <h3>Photography</h3>
+                    <h3>Hiking</h3>
+                    <h3>Power lifting</h3>
+                </div>
+            </div>
+        </div>
+    </section>
